@@ -82,17 +82,9 @@ city_orig_pd[city_orig_pd['city'] == "Port James"]
 # define array of colors to use
 colors = ['gold', 'lightskyblue', 'lightcoral']
 
-# get all city types
-citytype = city_orig_pd['type'].unique()
-citytype
+# define city types
+citytype = ['Rural', 'Suburban', 'Urban']
 ```
-
-
-
-
-    array(['Urban', 'Suburban', 'Rural'], dtype=object)
-
-
 
 
 ```python
