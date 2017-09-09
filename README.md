@@ -22,10 +22,6 @@ import seaborn as sns
 # define data inputs
 city_data = "Resources/city_data.csv"
 ride_data = "Resources/ride_data.csv"
-
-# define array of colors to use
-colors = ['gold', 'lightskyblue', 'lightcoral']
-citytype = ['Rural','Suburban','Urban']
 ```
 
 
@@ -78,6 +74,23 @@ city_orig_pd[city_orig_pd['city'] == "Port James"]
   </tbody>
 </table>
 </div>
+
+
+
+
+```python
+# define array of colors to use
+colors = ['gold', 'lightskyblue', 'lightcoral']
+
+# get all city types
+citytype = city_orig_pd['type'].unique()
+citytype
+```
+
+
+
+
+    array(['Urban', 'Suburban', 'Rural'], dtype=object)
 
 
 
@@ -365,7 +378,7 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](output_8_0.png)
 
 
 ## Total Fares by City Type
@@ -441,7 +454,7 @@ plt.show()
 ```
 
 
-![png](output_10_0.png)
+![png](output_11_0.png)
 
 
 ## Total Rides by City Type
@@ -514,7 +527,7 @@ plt.show()
 ```
 
 
-![png](output_13_0.png)
+![png](output_14_0.png)
 
 
 ## Total Drivers by City Type
@@ -589,5 +602,5 @@ plt.show()
 ```
 
 
-![png](output_16_0.png)
+![png](output_17_0.png)
 
