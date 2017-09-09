@@ -429,7 +429,7 @@ fares_df
 # Data to plot
 labels = fares_df.index.tolist()
 plt.figure()
-explode = (0.1, 0.1, 0)  # explode 1st slice
+explode = (0.0, 0.0, 0.1)  # explode 1st slice
  
 # # Plot
 plt.pie(fares_df['fare'], explode=explode, labels=labels, colors=colors,
@@ -503,7 +503,7 @@ rides_df
 ```python
 # Data to plot
 labels = rides_df.index.tolist()
-explode = (0.1, 0.1, 0)  # explode 1st slice
+explode = (0.0, 0.0, 0.1)  # explode 1st slice
  
 # # Plot
 plt.pie(rides_df['ride_id'], explode=explode, labels=labels, colors=colors,
@@ -576,7 +576,7 @@ drivers_df
 ```python
 # Data to plot
 labels = drivers_df.index.tolist()
-explode = (0.1, 0.1, 0) 
+explode = (0.0, 0.0, 0.1) 
  
 
 # # Plot
