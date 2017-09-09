@@ -521,7 +521,7 @@ plt.show()
 
 
 ```python
-drivers_df = merged_pd.groupby(['type']).aggregate({'driver_count':'sum'})
+drivers_df = city_orig_pd.groupby(['type']).aggregate({'driver_count':'sum'})
 drivers_df
 ```
 
@@ -556,15 +556,15 @@ drivers_df
   <tbody>
     <tr>
       <th>Rural</th>
-      <td>727</td>
+      <td>104</td>
     </tr>
     <tr>
       <th>Suburban</th>
-      <td>9730</td>
+      <td>638</td>
     </tr>
     <tr>
       <th>Urban</th>
-      <td>64501</td>
+      <td>2607</td>
     </tr>
   </tbody>
 </table>
